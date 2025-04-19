@@ -3,50 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>HOUSAIN</title>
+  <title>Housain</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet" />
   <style>
     body {
       margin: 0;
-      padding: 0;
       background-color: black;
       color: white;
+      font-family: 'Poppins', sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      font-family: 'Georgia', serif;
+      padding: 0 5vw;
     }
 
-    .logo {
-      font-size: 8vw; /* passt sich an Bildschirmgröße an */
-      letter-spacing: 1vw;
+    h1 {
+      letter-spacing: 0.4em;
+      font-size: 8vw;
+      font-weight: 300;
       text-align: center;
-      animation: fadeIn 2s ease-in-out;
-      padding: 0 5vw;
-      box-sizing: border-box;
-      white-space: nowrap;
+      opacity: 0;
+      animation: fadeIn 2s ease-out forwards;
     }
 
     @keyframes fadeIn {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
+      to {
         opacity: 1;
-        transform: translateY(0);
       }
     }
 
-    @media (max-width: 600px) {
-      .logo {
-        font-size: 12vw;
-        letter-spacing: 2vw;
+    @media (min-width: 768px) {
+      h1 {
+        font-size: 4vw;
       }
     }
   </style>
 </head>
 <body>
-  <div class="logo">H-O-U-S-A-I-N</div>
+  <h1>H O U S A I N</h1>
 </body>
 </html>
